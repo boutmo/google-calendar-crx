@@ -55,7 +55,7 @@ jobs:
     docker:
       - image: cibuilds/chrome-extension:latest
     environment:
-      - APP_ID: ${CLIENT_ID}
+      - APP_ID: ${APP_ID}
     steps:
       - attach_workspace:
           at: /root/workspace
