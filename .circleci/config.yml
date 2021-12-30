@@ -41,6 +41,7 @@ jobs:
           command: |
             apk update && \
             apk add --update nodejs
+            apk add zip
             npm i
 
       - run:
