@@ -40,8 +40,8 @@ jobs:
           name: "Install Dependencies"
           command: |
             apk update && \
-            apk add --update nodejs && \
-            apk add --update webpack-cli
+            apk add --update nodejs
+            npm i
 
       - run:
           name: "Package Extension"
