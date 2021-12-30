@@ -41,7 +41,7 @@ jobs:
           command: |
             apk update && \
             apk add --update nodejs && \
-            apk add --update webpack
+            apk add --update webpack-cli
 
       - run:
           name: "Package Extension"
