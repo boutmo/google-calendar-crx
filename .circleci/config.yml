@@ -44,7 +44,7 @@ jobs:
       - run:
           name: "Package Extension"
           command: |
-            npm run build
+            npm run build 
             zip -r build.zip build
       - persist_to_workspace:
           root: /root/project
@@ -55,7 +55,7 @@ jobs:
     docker:
       - image: cibuilds/chrome-extension:latest
     environment:
-      - APP_ID: ${CLIENT_ID}
+      - APP_ID: ${APP_ID}
     steps:
       - attach_workspace:
           at: /root/workspace
