@@ -1,3 +1,5 @@
 .DS_Store
 bin/*
 node_modules/*
+build
+env.bash
